@@ -35,4 +35,28 @@ router.post('/new', function(req, res, next){
 		res.json(data)
 	})
 })
+
+router.post('/update', function(req, res, next) {
+	var id = req.query.id || '';
+
+	var result = updateBlog(id, req.body);
+
+	result.then(data=>{
+
+		if(data){
+			res.json(data);
+		}
+	})
+})
+
+router.post('/del', function(req, res, next){
+	var id = req.query.id || '';
+	var result = delBlog(id);
+	result.then(data=>{
+		if(data)
+		{
+			res.json(data);
+		}
+	})
+})
 module.exports = router;
