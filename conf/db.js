@@ -10,7 +10,7 @@ if(env === 'dev')
 	 user:'root',
 	 host:'localhost',
 	 port:'3306',
-	 database:'job1'
+	 database:'myblog'
 	}
 }
 
@@ -18,11 +18,11 @@ if(env==='production')
 {
 	MYSQL_CONF = {
 	 connectionLimit:10,
-	 password:'password',
-	 user:'root',
-	 host:'localhost',
+	 password:'9b984a4e',
+	 user:'bedacf0bafe36b',
+	 host:'us-cdbr-east-02.cleardb.com',
 	 port:'3306',
-	 database:'job1'
+	 database:'myblog'
 	}
 }
 
@@ -32,7 +32,7 @@ MYSQL_CONF = {
 	 user:'root',
 	 host:'localhost',
 	 port:'3306',
-	 database:'job1'
+	 database:'myblog'
 	}
 
 module.exports ={
